@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>MineSafe</h2>
+
+<a href="dashboard.html">Dashboard</a>
+<a href="workers.html">Workers</a>
+<a href="alerts.html">Alerts</a>
+<a href="index.html">Logout</a>
+
+</div>
+
+
+
+<div class="main">
+
+
+<div class="topbar">
+
+<span>Manager Dashboard</span>
+
+<span id="time"></span>
+
+</div>
+
+
+
+<div class="cards">
+
+<div class="card">
+<h3>Total Workers</h3>
+<p>25</p>
+</div>
+
+<div class="card safe">
+<h3>Safe</h3>
+<p>20</p>
+</div>
+
+<div class="card danger">
+<h3>Danger</h3>
+<p>5</p>
+</div>
+
+</div>
+
+
+</div>
+
+
+<script>
+
+function showTime(){
+
+let d = new Date();
+
+document.getElementById("time").innerHTML =
+d.toLocaleTimeString();
+
+}
+
+setInterval(showTime,1000);
+
+</script>
+
+
+</body>
+</html>
